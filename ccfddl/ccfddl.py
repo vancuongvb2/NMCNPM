@@ -43,13 +43,14 @@ if __name__ == "__main__":
 
   # Tải nội dung từ URL
   response = requests.get(url)
-  data = response.text
+  if response.status_code == 200:
+    data = response.text
 
-  # chuyển nội dung sang object
-  yaml_data = yaml.safe_load(data)
+    # chuyển nội dung sang object
+    yaml_data = yaml.safe_load(data)
 
-  write_yml(yaml_data,"allconf.yml")
-  write_json(yaml_data,"allconf.json")
-  write_csv(yaml_data,"allconf.csv")
+    write_yml(yaml_data,"allconf.yml")
+    write_json(yaml_data,"allconf.json")
+    write_csv(yaml_data,"allconf.csv")
 
 
