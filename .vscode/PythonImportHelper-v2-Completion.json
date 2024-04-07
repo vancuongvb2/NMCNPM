@@ -55,55 +55,55 @@
     {
         "label": "write_json",
         "kind": 2,
-        "importPath": "helper",
-        "description": "helper",
+        "importPath": "polytechnique.helper",
+        "description": "polytechnique.helper",
         "peekOfCode": "def write_json(data, filename,encoding=\"utf-8\"):\n    with open(filename, 'w') as file:\n        json.dump(data, file, indent=4)\ndef write_csv(data, filename):\n    with open(filename, 'w', newline='',encoding=\"utf-8\") as csvfile:\n        fieldnames = data[0].keys()\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(data)",
-        "detail": "helper",
+        "detail": "polytechnique.helper",
         "documentation": {}
     },
     {
         "label": "write_csv",
         "kind": 2,
-        "importPath": "helper",
-        "description": "helper",
+        "importPath": "polytechnique.helper",
+        "description": "polytechnique.helper",
         "peekOfCode": "def write_csv(data, filename):\n    with open(filename, 'w', newline='',encoding=\"utf-8\") as csvfile:\n        fieldnames = data[0].keys()\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(data)",
-        "detail": "helper",
+        "detail": "polytechnique.helper",
         "documentation": {}
     },
     {
         "label": "deadline_ahead_list",
         "kind": 2,
-        "importPath": "polytechnique",
-        "description": "polytechnique",
+        "importPath": "polytechnique.polytechnique",
+        "description": "polytechnique.polytechnique",
         "peekOfCode": "def deadline_ahead_list(data):\n  tbody = data.find('tbody')\n  rows = tbody.find_all('tr')\n  conference_array = []\n  if len(rows) == 0: return conference_array\n  for row in rows:\n      cells = row.find_all('td')\n      name = cells[0].find('a').text.strip() \n      conference_link = cells[0].find('a')['href']\n      description = cells[0].find('span', class_='tooltiptext').text.strip() if cells[0].find('span', class_='tooltiptext') is not None else \"\"",
-        "detail": "polytechnique",
+        "detail": "polytechnique.polytechnique",
         "documentation": {}
     },
     {
         "label": "running_list",
         "kind": 2,
-        "importPath": "polytechnique",
-        "description": "polytechnique",
+        "importPath": "polytechnique.polytechnique",
+        "description": "polytechnique.polytechnique",
         "peekOfCode": "def running_list(data):\n  tbody = data.find('tbody')\n  rows = tbody.find_all('tr')\n  conference_array = []\n  if len(rows) == 0: return conference_array\n  for row in rows:\n      cells = row.find_all('td')\n      name = cells[0].find('a').text.strip()\n      conference_link = cells[0].find('a')['href']\n      location = cells[1].text.strip()",
-        "detail": "polytechnique",
+        "detail": "polytechnique.polytechnique",
         "documentation": {}
     },
     {
         "label": "deadline_over_list",
         "kind": 2,
-        "importPath": "polytechnique",
-        "description": "polytechnique",
+        "importPath": "polytechnique.polytechnique",
+        "description": "polytechnique.polytechnique",
         "peekOfCode": "def deadline_over_list(data):\n  tbody = data.find('tbody')\n  rows = tbody.find_all('tr')\n  conference_array = []\n  if len(rows) == 0: return conference_array\n  for row in rows:\n    cells = row.find_all('td')\n    name = cells[0].find('a').text.strip()\n    conference_link = cells[0].find('a')['href']\n    location = cells[1].text.strip()",
-        "detail": "polytechnique",
+        "detail": "polytechnique.polytechnique",
         "documentation": {}
     },
     {
         "label": "planning_conference_list",
         "kind": 2,
-        "importPath": "polytechnique",
-        "description": "polytechnique",
+        "importPath": "polytechnique.polytechnique",
+        "description": "polytechnique.polytechnique",
         "peekOfCode": "def planning_conference_list(data):\n  tbody = data.find('tbody')\n  rows = tbody.find_all('tr')\n  conference_array = []\n  if len(rows) == 0: return conference_array\n  for row in rows:\n    cells = row.find_all('td')\n    name = cells[0].find('a').text.strip()\n    conference_link = cells[0].find('a')['href']\n    year = cells[1].text.strip()",
-        "detail": "polytechnique",
+        "detail": "polytechnique.polytechnique",
         "documentation": {}
     }
 ]
