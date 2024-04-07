@@ -1,0 +1,51 @@
+[
+    {
+        "name": "WRLA",
+        "conference_link": "https://wrla2024.gitlab.io/",
+        "location": "Luxembourg City, Luxembourg",
+        "date": "6-7 April 2024",
+        "remark": "co-located with ETAPS"
+    },
+    {
+        "name": "BLAST",
+        "conference_link": "https://www.math.unt.edu/~ntrang/blast2024/",
+        "location": "Denton, Texas, USA",
+        "date": "6-9 April 2024",
+        "remark": "total eclipse observation in Dallas (TX) on 8 April 2024"
+    },
+    {
+        "name": "ETAPS",
+        "conference_link": "https://etaps.org/",
+        "location": "Luxembourg City, Luxembourg",
+        "date": "6-11 April 2024",
+        "remark": "federated conference including ESOP, FASE, FoSSaCS, and TACAS"
+    },
+    {
+        "name": "ESOP",
+        "conference_link": "https://etaps.org/2024/conferences/esop/",
+        "location": "Luxembourg City, Luxembourg",
+        "date": "6-11 April 2024",
+        "remark": "part of ETAPS"
+    },
+    {
+        "name": "FASE",
+        "conference_link": "https://etaps.org/2024/conferences/fase/",
+        "location": "Luxembourg City, Luxembourg",
+        "date": "6-11 April 2024",
+        "remark": "part of ETAPS"
+    },
+    {
+        "name": "FoSSaCS",
+        "conference_link": "https://etaps.org/2024/conferences/fossacs/",
+        "location": "Luxembourg City, Luxembourg",
+        "date": "6-11 April 2024",
+        "remark": "part of ETAPS"
+    },
+    {
+        "name": "TACAS",
+        "conference_link": "https://etaps.org/2024/conferences/tacas/",
+        "location": "Luxembourg City, Luxembourg",
+        "date": "6-11 April 2024",
+        "remark": "part of ETAPS"
+    }
+]

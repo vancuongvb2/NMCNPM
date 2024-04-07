@@ -1,10 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import  as writer
-
-url = "https://www.lix.polytechnique.fr/~hermann/conf.php"
-response = requests.get(url)
+import helper
 
 def deadline_ahead_list(data):
   tbody = data.find('tbody')
@@ -74,7 +71,11 @@ def planning_conference_list(data):
     conference_array.append({'name':name,'conference_link':conference_link,'year':year,'location':location,'starting_date':starting_date,'ending_date':ending_date,'remarks':remarks})
   return conference_array
 
+
+
 if __name__ == "__main__":
+  url = "https://www.lix.polytechnique.fr/~hermann/conf.php"
+  response = requests.get(url)
   deadline_ahead_conference_arr = []
   running_conference_arr = []
   deadline_over_future_conference_arr = []
@@ -90,5 +91,12 @@ if __name__ == "__main__":
     running_conference_arr = running_list(running)
     deadline_over_future_conference_arr = deadline_over_list(deadline_over_future)
     planning_conference_arr = planning_conference_list(planning_conference)
-    writer.write_json(deadline_ahead_conference_arr,"deadline_over_future_conference_conference.json")
+    helper.write_json(deadline_ahead_conference_arr,"deadline_over_future_conference_conference.json")
+    helper.write_csv(deadline_over_future_conference_arr,"deadline_over_future_conference_conference.csv")
+    helper.write_json(running_conference_arr,"running_conference_arr.json")
+    helper.write_csv(running_conference_arr,"running_conference_arr.csv")
+    helper.write_json(deadline_over_future_conference_arr,"deadline_over_future_conference_arr.json")
+    helper.write_csv(deadline_over_future_conference_arr,"deadline_over_future_conference_arr.csv")
+    helper.write_json(planning_conference_arr,"planning_conference_arr.json")
+    helper.write_csv(planning_conference_arr,"planning_conference_arr.csv")
   
