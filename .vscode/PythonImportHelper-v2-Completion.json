@@ -1,5 +1,23 @@
 [
     {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -15,15 +33,6 @@
         "importPath": "csv",
         "description": "csv",
         "detail": "csv",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
         "documentation": {}
     },
     {
@@ -44,30 +53,30 @@
         "documentation": {}
     },
     {
-        "label": "helper",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "helper",
-        "description": "helper",
-        "detail": "helper",
+        "label": "write_yml",
+        "kind": 2,
+        "importPath": "ccfddl.ccfddl",
+        "description": "ccfddl.ccfddl",
+        "peekOfCode": "def write_yml(data,filename):\n    with open(filename, 'w') as file:\n        yaml.dump(data, file)\ndef write_json(data, filename):\n    with open(filename, 'w') as file:\n        json.dump(data, file, indent=4)\ndef write_csv(data, filename):\n    with open(filename, \"w\", newline='') as file:\n      writer = csv.writer(file)\n      # Ghi header",
+        "detail": "ccfddl.ccfddl",
         "documentation": {}
     },
     {
         "label": "write_json",
         "kind": 2,
-        "importPath": "polytechnique.helper",
-        "description": "polytechnique.helper",
-        "peekOfCode": "def write_json(data, filename,encoding=\"utf-8\"):\n    with open(filename, 'w') as file:\n        json.dump(data, file, indent=4)\ndef write_csv(data, filename):\n    with open(filename, 'w', newline='',encoding=\"utf-8\") as csvfile:\n        fieldnames = data[0].keys()\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(data)",
-        "detail": "polytechnique.helper",
+        "importPath": "ccfddl.ccfddl",
+        "description": "ccfddl.ccfddl",
+        "peekOfCode": "def write_json(data, filename):\n    with open(filename, 'w') as file:\n        json.dump(data, file, indent=4)\ndef write_csv(data, filename):\n    with open(filename, \"w\", newline='') as file:\n      writer = csv.writer(file)\n      # Ghi header\n      writer.writerow([\"Title\", \"Description\", \"Sub\", \"Rank\", \"DBLP\", \"Year\", \"ID\", \"Link\", \"Abstract Deadline\", \"Deadline\", \"Timezone\", \"Date\", \"Place\"])\n      # Ghi dữ liệu từ YAML vào CSV\n      for conference in data:",
+        "detail": "ccfddl.ccfddl",
         "documentation": {}
     },
     {
         "label": "write_csv",
         "kind": 2,
-        "importPath": "polytechnique.helper",
-        "description": "polytechnique.helper",
-        "peekOfCode": "def write_csv(data, filename):\n    with open(filename, 'w', newline='',encoding=\"utf-8\") as csvfile:\n        fieldnames = data[0].keys()\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(data)",
-        "detail": "polytechnique.helper",
+        "importPath": "ccfddl.ccfddl",
+        "description": "ccfddl.ccfddl",
+        "peekOfCode": "def write_csv(data, filename):\n    with open(filename, \"w\", newline='') as file:\n      writer = csv.writer(file)\n      # Ghi header\n      writer.writerow([\"Title\", \"Description\", \"Sub\", \"Rank\", \"DBLP\", \"Year\", \"ID\", \"Link\", \"Abstract Deadline\", \"Deadline\", \"Timezone\", \"Date\", \"Place\"])\n      # Ghi dữ liệu từ YAML vào CSV\n      for conference in data:\n          title = conference[\"title\"]\n          description = conference[\"description\"]\n          sub = conference[\"sub\"]",
+        "detail": "ccfddl.ccfddl",
         "documentation": {}
     },
     {
@@ -103,6 +112,24 @@
         "importPath": "polytechnique.polytechnique",
         "description": "polytechnique.polytechnique",
         "peekOfCode": "def planning_conference_list(data):\n  tbody = data.find('tbody')\n  rows = tbody.find_all('tr')\n  conference_array = []\n  if len(rows) == 0: return conference_array\n  for row in rows:\n    cells = row.find_all('td')\n    name = cells[0].find('a').text.strip()\n    conference_link = cells[0].find('a')['href']\n    year = cells[1].text.strip()",
+        "detail": "polytechnique.polytechnique",
+        "documentation": {}
+    },
+    {
+        "label": "write_json",
+        "kind": 2,
+        "importPath": "polytechnique.polytechnique",
+        "description": "polytechnique.polytechnique",
+        "peekOfCode": "def write_json(data, filename):\n    with open(filename, 'w', encoding=\"utf-8\") as file:\n        json.dump(data, file, indent=4)\ndef write_csv(data, filename):\n    with open(filename, 'w', newline='',encoding=\"utf-8\") as csvfile:\n        fieldnames = data[0].keys()\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(data)\nif __name__ == \"__main__\":",
+        "detail": "polytechnique.polytechnique",
+        "documentation": {}
+    },
+    {
+        "label": "write_csv",
+        "kind": 2,
+        "importPath": "polytechnique.polytechnique",
+        "description": "polytechnique.polytechnique",
+        "peekOfCode": "def write_csv(data, filename):\n    with open(filename, 'w', newline='',encoding=\"utf-8\") as csvfile:\n        fieldnames = data[0].keys()\n        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)\n        writer.writeheader()\n        writer.writerows(data)\nif __name__ == \"__main__\":\n  url = \"https://www.lix.polytechnique.fr/~hermann/conf.php\"\n  response = requests.get(url)\n  deadline_ahead_conference_arr = []",
         "detail": "polytechnique.polytechnique",
         "documentation": {}
     }

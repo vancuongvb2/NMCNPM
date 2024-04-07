@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import helper
+import json
+import csv
 
 def deadline_ahead_list(data):
   tbody = data.find('tbody')
@@ -71,6 +72,16 @@ def planning_conference_list(data):
     conference_array.append({'name':name,'conference_link':conference_link,'year':year,'location':location,'starting_date':starting_date,'ending_date':ending_date,'remarks':remarks})
   return conference_array
 
+def write_json(data, filename):
+    with open(filename, 'w', encoding="utf-8") as file:
+        json.dump(data, file, indent=4)
+
+def write_csv(data, filename):
+    with open(filename, 'w', newline='',encoding="utf-8") as csvfile:
+        fieldnames = data[0].keys()
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(data)
 
 
 if __name__ == "__main__":
@@ -91,12 +102,12 @@ if __name__ == "__main__":
     running_conference_arr = running_list(running)
     deadline_over_future_conference_arr = deadline_over_list(deadline_over_future)
     planning_conference_arr = planning_conference_list(planning_conference)
-    helper.write_json(deadline_ahead_conference_arr,"deadline_ahead_conference_arr.json")
-    helper.write_csv(deadline_ahead_conference_arr,"deadline_ahead_conference_arr.csv")
-    helper.write_json(running_conference_arr,"running_conference_arr.json")
-    helper.write_csv(running_conference_arr,"running_conference_arr.csv")
-    helper.write_json(deadline_over_future_conference_arr,"deadline_over_future_conference_arr.json")
-    helper.write_csv(deadline_over_future_conference_arr,"deadline_over_future_conference_arr.csv")
-    helper.write_json(planning_conference_arr,"planning_conference_arr.json")
-    helper.write_csv(planning_conference_arr,"planning_conference_arr.csv")
+    write_json(deadline_ahead_conference_arr,"deadline_ahead_conference_arr.json")
+    write_csv(deadline_ahead_conference_arr,"deadline_ahead_conference_arr.csv")
+    write_json(running_conference_arr,"running_conference_arr.json")
+    write_csv(running_conference_arr,"running_conference_arr.csv")
+    write_json(deadline_over_future_conference_arr,"deadline_over_future_conference_arr.json")
+    write_csv(deadline_over_future_conference_arr,"deadline_over_future_conference_arr.csv")
+    write_json(planning_conference_arr,"planning_conference_arr.json")
+    write_csv(planning_conference_arr,"planning_conference_arr.csv")
   
