@@ -20,6 +20,16 @@
         "subformat_details": "IEEE, 10 pages full, 2 pages extended abstracts"
     },
     {
+        "name": "COCOON",
+        "conference_link": "https://anl.sjtu.edu.cn/cocoon2024/",
+        "description": "Computing and Combinatorics Conference",
+        "location": "Shanghai, China",
+        "deadline": "8 April 2024",
+        "date": "23-25 August 2024",
+        "notification": "25 May 2024",
+        "subformat_details": "LNCS, 12 pages"
+    },
+    {
         "name": "ThEdu",
         "conference_link": "no-webpage-yet.html",
         "description": "Theorem proving components for Educational software",
@@ -290,6 +300,16 @@
         "subformat_details": "TPLP, 14 pages regular;EPTCS, 7 pages short, 3 pages recently published, 3 pages system demonstrations, 3 pages birds of a feather"
     },
     {
+        "name": "MATCH-UP",
+        "conference_link": "https://www.dcs.gla.ac.uk/research/algorithms/MATCHUP2024/",
+        "description": "Matching Under Preferences",
+        "location": "Oxford, United Kingdom",
+        "deadline": "1 May 2024",
+        "date": "9-11 September 2024",
+        "notification": "1 July 2024",
+        "subformat_details": "12 pages A4"
+    },
+    {
         "name": "QUANTIFY",
         "conference_link": "https://qbf24.pages.sai.jku.at/quantify/",
         "description": "Workshop on Quantification",
@@ -370,6 +390,16 @@
         "subformat_details": "LNCS, 15 pages"
     },
     {
+        "name": "PoS",
+        "conference_link": "http://www.pragmaticsofsat.org/2024/",
+        "description": "Pragmatics of SAT",
+        "location": "Pune, India",
+        "deadline": "13/18 May 202427 May 20245 June 2024",
+        "date": "20 August 2024",
+        "notification": "23 June 2023",
+        "subformat_details": "CEURART, 1 column, 15 pages long, 8 pages short, both excluding references,8 pages competition solver description; 3rd deadline for SAT fast track, last deadline for competition solver descriptions; satellite event of SAT"
+    },
+    {
         "name": "FedCSIS",
         "conference_link": "https://2024.fedcsis.org/",
         "description": "Federated Conference on Computer Science and Information Systems",
@@ -400,14 +430,14 @@
         "subformat_details": "LIPIcs, 15 pages excluding front matter and references; part of ALGO"
     },
     {
-        "name": "PoS",
-        "conference_link": "http://www.pragmaticsofsat.org/2024/",
-        "description": "Pragmatics of SAT",
-        "location": "Pune, India",
-        "deadline": "13/18 May 202427 May 20245 June 2024",
-        "date": "20 August 2024",
-        "notification": "23 June 2023",
-        "subformat_details": "CEURART, 1 column, 15 pages long, 8 pages short, both excluding references,8 pages competition solver description; 3rd deadline for SAT fast track, last deadline for competition solver descriptions; satellite event of SAT"
+        "name": "SAGT",
+        "conference_link": "https://www.cwi.nl/en/groups/networks-and-optimization/events/sagt-2024/",
+        "description": "Symposium on Algorithmic Game Theory",
+        "location": "Amsterdam, The Netherlands",
+        "deadline": "21 May 2024",
+        "date": "3-6 September 2024",
+        "notification": "5 July 2024",
+        "subformat_details": "LNCS, 18 pages excluding references"
     },
     {
         "name": "ICTAC",
@@ -518,6 +548,36 @@
         "date": "4-6 September 2024",
         "notification": "5 August 2024",
         "subformat_details": "LIPIcs, no page limit, but only first 12 pages read; part of ALGO"
+    },
+    {
+        "name": "ISAAC",
+        "conference_link": "https://sites.google.com/view/isaac2024/",
+        "description": "International Symposium on Algorithms and Computation",
+        "location": "Sydney, Australia",
+        "deadline": "28 June 2024",
+        "date": "8-12 December 2024",
+        "notification": "2 September 2024",
+        "subformat_details": "LIPIcs, double-blind, 12 pages excluding references"
+    },
+    {
+        "name": "ATMOS",
+        "conference_link": "https://algo-conference.org/2024/atmos/",
+        "description": "Algorithmic Approaches for Transportation Modelling, Optimization, and Systems",
+        "location": "Egham, United Kingdom",
+        "deadline": "30 June 2024",
+        "date": "5-6 September 2024",
+        "notification": "31 July 2024",
+        "subformat_details": "OASIcs, 12 pages excluding references regular, 6 pages short; part of ALGO"
+    },
+    {
+        "name": "FSTTCS",
+        "conference_link": "https://www.fsttcs.org.in/2024/",
+        "description": "Foundations of Software Technology and Theoretical Computer Science",
+        "location": "Gandhinagar, Gujarat, India",
+        "deadline": "5 July 2024",
+        "date": "16-18 December 2024",
+        "notification": "16 September 2024",
+        "subformat_details": "LIPIcs, 15 pages excluding references"
     },
     {
         "name": "NMR",
