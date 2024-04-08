@@ -1,35 +1,5 @@
 [
     {
-        "name": "TERMGRAPH",
-        "conference_link": "http://termgraph.org.uk/2024/",
-        "location": "Luxembourg City, Luxembourg",
-        "date": "7 April 2024",
-        "notification": "9 February 2024",
-        "final_version": "17 March 2024",
-        "early_registration": "6 March 2024",
-        "remarks": "satellite event of ETAPS"
-    },
-    {
-        "name": "FoIKS",
-        "conference_link": "https://foiks2024.github.io/",
-        "location": "Sheffield, United Kingdom",
-        "date": "8-11 April 2024",
-        "notification": "29 January 2024",
-        "final_version": "8 February 2024",
-        "early_registration": "8 March 2024",
-        "remarks": ""
-    },
-    {
-        "name": "SAC",
-        "conference_link": "https://www.sigapp.org/sac/sac2024/",
-        "location": "Avila, Spain",
-        "date": "8-12 April 2024",
-        "notification": "17 November 2023",
-        "final_version": "15 December 2023",
-        "early_registration": "5 January 2024",
-        "remarks": ""
-    },
-    {
         "name": "SPIN",
         "conference_link": "https://spin-web.github.io/SPIN2024/",
         "location": "Luxembourg City, Luxembourg",

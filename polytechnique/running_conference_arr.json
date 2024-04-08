@@ -1,12 +1,5 @@
 [
     {
-        "name": "WRLA",
-        "conference_link": "https://wrla2024.gitlab.io/",
-        "location": "Luxembourg City, Luxembourg",
-        "date": "6-7 April 2024",
-        "remark": "co-located with ETAPS"
-    },
-    {
         "name": "BLAST",
         "conference_link": "https://www.math.unt.edu/~ntrang/blast2024/",
         "location": "Denton, Texas, USA",
@@ -47,5 +40,19 @@
         "location": "Luxembourg City, Luxembourg",
         "date": "6-11 April 2024",
         "remark": "part of ETAPS"
+    },
+    {
+        "name": "FoIKS",
+        "conference_link": "https://foiks2024.github.io/",
+        "location": "Sheffield, United Kingdom",
+        "date": "8-11 April 2024",
+        "remark": ""
+    },
+    {
+        "name": "SAC",
+        "conference_link": "https://www.sigapp.org/sac/sac2024/",
+        "location": "Avila, Spain",
+        "date": "8-12 April 2024",
+        "remark": ""
     }
 ]

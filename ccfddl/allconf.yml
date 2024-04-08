@@ -1505,6 +1505,15 @@
       deadline: '2021-07-23 23:59:59'
     timezone: UTC-12
     year: 2021
+  - date: Oct 23 - 25, 2024
+    id: isc24
+    link: https://isc24.cs.gmu.edu/
+    place: VA, USA
+    timeline:
+    - comment: Submission Deadline
+      deadline: '2024-06-06 23:59:59'
+    timezone: AoE
+    year: 2024
   dblp: isw
   description: Information Security Conference
   rank: C
